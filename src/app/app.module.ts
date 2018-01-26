@@ -8,13 +8,17 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 import { StripeJavaScriptPage } from '../pages/stripe-java-script/stripe-java-script';
+import { StripeNativePage } from '../pages/stripe-native/stripe-native';
+
+import { Stripe } from '@ionic-native/stripe';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
     StripeJavaScriptPage,
+    StripeNativePage
   ],
   imports: [
     BrowserModule,
@@ -24,12 +28,14 @@ import { FormsModule } from '@angular/forms';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
     StripeJavaScriptPage,
+    StripeNativePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Stripe,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
