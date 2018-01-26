@@ -7,10 +7,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { StripeJavaScriptPage } from '../pages/stripe-java-script/stripe-java-script';
 @NgModule({
   declarations: [
     MyApp,
     HomePage
+    StripeJavaScriptPage,
   ],
   imports: [
     BrowserModule,
@@ -20,6 +22,7 @@ import { HomePage } from '../pages/home/home';
   entryComponents: [
     MyApp,
     HomePage
+    StripeJavaScriptPage,
   ],
   providers: [
     StatusBar,
