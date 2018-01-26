@@ -8,6 +8,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 import { StripeJavaScriptPage } from '../pages/stripe-java-script/stripe-java-script';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -16,6 +18,7 @@ import { StripeJavaScriptPage } from '../pages/stripe-java-script/stripe-java-sc
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
