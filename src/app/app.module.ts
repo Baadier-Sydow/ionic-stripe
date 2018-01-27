@@ -11,7 +11,6 @@ import { StripeJavaScriptPage } from '../pages/stripe-java-script/stripe-java-sc
 import { StripeNativePage } from '../pages/stripe-native/stripe-native';
 
 import { Stripe } from '@ionic-native/stripe';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +21,6 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
