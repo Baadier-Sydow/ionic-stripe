@@ -17,7 +17,7 @@ export class StripeNativePage {
   }
 
   ionViewDidLoad() {
-    this.stripe.setPublishableKey('');
+    this.stripe.setPublishableKey('YOUR_API_KEY');
   }
 
   validateCard(){
